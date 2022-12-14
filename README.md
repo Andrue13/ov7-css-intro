@@ -15,14 +15,25 @@ $ rm -rf .git/
 
 3. Index files
 
-```
+```bash
 $ git status
 $ git add . (все файлы)
 $ git add index.html style.css README.md
 ```
 4. Make a commit
 
-```
+```bash
 $ git status
 $ git commit -m "First commit"
 ```
+5. Check commit
+
+`$ git log`
+
+6. Add remote rep. 
+
+`$ git remote add origin https://github.com/Andrue13/ov7-css-intro.git`
+
+7. Send changes to the central repository
+
+`$ git push origin master`
