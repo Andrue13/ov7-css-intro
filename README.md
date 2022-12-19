@@ -37,3 +37,11 @@ $ git commit -m "First commit"
 7. Send changes to the central repository
 
 `$ git push origin master`
+
+8. Clon (Копируем проект  с GitHab)
+
+`$ git clone https://github.com/Andrue13/ov7-css-intro.git`
+
+9. Pull (Обновляем проект с GitHab)
+
+`$ git pull` 
