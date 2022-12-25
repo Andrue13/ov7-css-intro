@@ -17,6 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .elem6 {
@@ -107,6 +109,16 @@ html {
     border: 2px solid rgb(45, 9, 188);
     box-shadow: 6px 6px 6px 0px #28b662;
 }
+
+#btn2{
+    margin: 10px;
+}
+
+.elem.show{
+    display: none;
+}
+
+
 
 
 

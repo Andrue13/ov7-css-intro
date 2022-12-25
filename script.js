@@ -1,8 +1,9 @@
 // @ts-check
 const openModal = document.getElementById('open-modal')
-const modal = document.querySelector('.modal')
 /**
- * @type {HTMLElement | null}*/
+ * @type {HTMLElement | null} 
+ */
+const modal = document.querySelector('.modal')
 const modalBackground = document.querySelector('.modal-background')
 
 if (openModal) openModal.onclick = function() {
@@ -13,12 +14,6 @@ if (modalBackground) modalBackground.addEventListener('click', function() {
     modal?.classList.remove('show')
 })
 
-const newDiv = document.createElement('div')
-newDiv.classList.add('elem')
-const numElem = document.createElement('span')
-numElem.textContent = '12'
-newDiv.append(numElem)
-document.body.append(newDiv)
 
 const openNewModal = document.querySelector('.btn1')
 if (openNewModal) openNewModal.onclick = function() {
@@ -28,4 +23,17 @@ if (openNewModal) openNewModal.onclick = function() {
     numElem.textContent = '12'
     newDiv.append(numElem)
     document.body.append(newDiv)
+    const newButton = document.createElement('button')
+    newButton.id = 'btn2';
+    newButton.textContent = 'Delete'
+    newDiv.append(newButton)
  }
+
+ const btn2 = document.querySelector('.btn2')
+ const oldDiv = document.querySelector('elem')
+ if (btn2) btn2.addEventListener('click', function() {
+    oldDiv?.remove()
+})
+
+const arr =[1, 2, 3, 4, 5, 6, 7]
+
