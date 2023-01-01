@@ -19,7 +19,7 @@ $ rm -rf .git/
 $ git init
 ```
 
-4. Index files
+4. Index files (выбор файлов для синхронизации с Git)
 
 ```bash
 $ git status
@@ -32,7 +32,7 @@ $ git add index.html style.css README.md (выбор отдельных файл
 $ git status
 $ git commit -m "First commit"
 ```
-6. Check commit
+6. Check commit (Проверка истории проекта в репозитории)
 
 ```bash
 $ git log
@@ -41,7 +41,7 @@ $ git log
 7. Add remote rep. 
 
 ```bash
-$ git remote add origin https://github.com/Andrue13/ov7-css-intro.git
+$ git remote add origin https://github.com/Andrue13/ov7-css-intro.gitё
 ```
 
 8. Send changes to the central repository
