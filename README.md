@@ -6,42 +6,58 @@
 
 ```bash
 $ git --version
+```
+2. Проверка была ли инициализации Git, если была удаляем, что бы начать с нуля
+
+```bash
 $ ls -la
 $ rm -rf .git/
 ```
-2. Git init a new respository
+3. Git init a new repository
 
-`$ git init`
+```bash
+$ git init
+```
 
-3. Index files
+4. Index files
 
 ```bash
 $ git status
 $ git add . (все файлы)
-$ git add index.html style.css README.md
+$ git add index.html style.css README.md (выбор отдельных файлов )
 ```
-4. Make a commit
+5. Make a commit
 
 ```bash
 $ git status
 $ git commit -m "First commit"
 ```
-5. Check commit
+6. Check commit
 
-`$ git log`
+```bash
+$ git log
+```
 
-6. Add remote rep. 
+7. Add remote rep. 
 
-`$ git remote add origin https://github.com/Andrue13/ov7-css-intro.git`
+```bash
+$ git remote add origin https://github.com/Andrue13/ov7-css-intro.git
+```
 
-7. Send changes to the central repository
+8. Send changes to the central repository
 
-`$ git push origin master`
+```bash
+$ git push origin master
+```
 
-8. Clon (Копируем проект  с GitHab)
+9. Clon (Копируем проект  с GitHab)
 
-`$ git clone https://github.com/Andrue13/ov7-css-intro.git`
+```bash
+$ git clone https://github.com/Andrue13/ov7-css-intro.git
+```
 
-9. Pull (Обновляем проект с GitHab)
+10. Pull (Обновляем проект с GitHab)
 
-`$ git pull` 
+```bash
+$ git pull
+```

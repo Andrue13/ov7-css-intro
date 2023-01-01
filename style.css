@@ -22,7 +22,7 @@
 }
 
 .elem6 {
-    flex-shrink: 3;
+    flex-shrink: 2;
 }
 
 .elem7 {
@@ -37,11 +37,14 @@ html {
 }
 .modal {
     position: fixed;
-    inset: 0;
+    inset: 0; 
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    height: 100vh; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 100vh;  */
     display: none;
 }
 
@@ -53,7 +56,7 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     width: 300px;
     height: 200px;
     background-color: white;
@@ -102,7 +105,7 @@ html {
 }
 
 .from-area input:hover {
-    border: 2px solid rgb(187, 185, 185);
+    border: 2px solid rgb(105, 104, 104);
 }
 
 .from-area input:focus {
