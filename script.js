@@ -1,18 +1,26 @@
 // @ts-check
 const openModal = document.getElementById('open-modal')
-/**
- * @type {HTMLElement | null} 
- */
+/** @type {HTMLElement | null} */
 const modal = document.querySelector('.modal')
 const modalBackground = document.querySelector('.modal-background')
 
+// if (openModal) openModal.onclick = function() {
+//    modal?.classList.add('show')
+// }
+// if (modalBackground) modalBackground.addEventListener('click', function() {
+//     modal?.classList.remove('show')
+// })
+
+const modalClose = function(){
+    modal?.classList.remove('show')
+    modalBackground?.removeEventListener('click', modalClose)
+}
 if (openModal) openModal.onclick = function() {
    modal?.classList.add('show')
+   if (modalBackground) modalBackground.addEventListener('click', modalClose)
 }
+    
 
-if (modalBackground) modalBackground.addEventListener('click', function() {
-    modal?.classList.remove('show')
-})
 
 
 const openNewModal = document.querySelector('.btn1')

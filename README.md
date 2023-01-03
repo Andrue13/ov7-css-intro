@@ -38,7 +38,7 @@ $ git commit -m "First commit"
 $ git log
 ```
 
-7. Add remote rep. 
+7. Add remote rep. (Делаем один раз. Подключаемся к удаленному проекту с помощю ссылки) 
 
 ```bash
 $ git remote add origin https://github.com/Andrue13/ov7-css-intro.gitё
@@ -56,7 +56,7 @@ $ git push origin master
 $ git clone https://github.com/Andrue13/ov7-css-intro.git
 ```
 
-10. Pull (Обновляем проект с GitHab)
+10. Pull (Обновляем проект с GitHab. Если работали на рабочом компютере а тепер хотим пороботать например с домашнего - синхронизуем проект.)
 
 ```bash
 $ git pull
