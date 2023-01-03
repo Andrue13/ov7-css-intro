@@ -24,6 +24,7 @@ if (openModal) openModal.onclick = function() {
 
 
 const openNewModal = document.querySelector('.btn1')
+/** @type {HTMLElement | null} */
 if (openNewModal) openNewModal.onclick = function() {
     const newDiv = document.createElement('div')
     newDiv.classList.add('elem')
