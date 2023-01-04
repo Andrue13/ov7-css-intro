@@ -50,11 +50,44 @@
     </div>
     
     <div class="submit">
-        <button class="btn btn1" type="submit">Новый блок</button>
-    </div>  
-
+        <button onclick="onAddElem()" class="btn btn1" id =add-elem type="submit">Новый блок</button>
+    </div>
     
-<script src="script.js"></script>
+    <div class="container" id="container"></div>  
+    
+    <script src="script.js"></script>
+    <script>
+        let counter = 0
+        function onAddElem() {
+            // consol.log(onAddElem.name) получаем имя функции
+            
+            // Первый вариант
+            // container.innerHTML += `<div class="elem">${counter++}</div>`
+
+            // Второй вариант
+            // const div = document.createElement('div')
+            // div.className = 'elem'
+            // div.textContent = counter++
+            // div.style.color = 'red'
+            // div.style.backgroundColor = 'blue'
+            // container.append(div)  
+            
+
+            // Третий вариант
+            const colors = ['red', 'yellow', 'black', 'green']
+            const container = document.querySelector('#container')
+            container.insertAdjacentHTML('beforeend',
+             `<div id=${Math.random()} 
+                style="color: ${colors[Math.round(Math.random() * 
+                (colors.length -1))]}; background-color: blue;" class="elem">${counter++}
+                <button onclick="removeElem(event)">X</button>
+            </div>`)    
+        }
+        
+        function removeElem(event) {
+            event.target.parentElement.remove()
+        }
+    </script>
 </body>
 </html>
 
